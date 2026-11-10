@@ -1,24 +1,18 @@
-#include <stdio.h>
- int main()
+#include<stdio.h>
+int main()
+{
+ int values[4];
+ printf("Enter 4 integers");
+ //taking input and storing it in an array
+ for(int i=0;i<4;++i)
  {
-  int n, i, j, count;
-  printf("Enter the value of n: ");
-  scanf("%d", &n);
-  printf("Prime numbers between 1 and %d are:\n", n);
-  for (i = 2; i <= n; i++)
-  {
-   count = 0;
-   for (j = 1; j <= i; j++)
-  {
-   if (i % j == 0)
-  {
-   count++;
-  }
-  }
-   if (count == 2)
-  {
-   printf("%d ", i);
-  }
-  }
-   return 0;
+  scanf("%d",&values[i]);
  }
+ printf("Displaying integers:");
+ //printing elements of an array
+ for(int i=0;i<4;++i)
+{
+ printf("%d\t",values[i]);
+}
+return 0;
+}
